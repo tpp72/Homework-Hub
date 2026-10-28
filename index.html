@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>รวมการบ้าน Graph Database | ต่อพงศ์ เพียรพัฒน์กุล</title>
-  <meta name="description" content="งานวิชา Graph Database สี่ชิ้น ของ ต่อพงศ์ เพียรพัฒน์กุล รหัสนักศึกษา 664245010">
+  <meta name="description" content="งานวิชา Graph Database ห้าชิ้น ของ ต่อพงศ์ เพียรพัฒน์กุล รหัสนักศึกษา 664245010">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -97,7 +97,7 @@
   <header class="hub-band">
     <div class="wrap">
       <h1 class="hub-title">รวมการบ้านและระบบแนะนำ</h1>
-      <p class="hub-sub">งานวิชา Graph Database สี่ชิ้นที่ต่อเนื่องกัน เริ่มจาก Cypher พื้นฐาน ไปถึงระบบแนะนำเหรียญที่ต่อกับ Neo4j Aura</p>
+      <p class="hub-sub">งานวิชา Graph Database ห้าชิ้นที่ต่อเนื่องกัน เริ่มจาก Transaction ใน MySQL ผ่าน Cypher พื้นฐาน ไปถึงระบบแนะนำเหรียญที่ต่อกับ Neo4j Aura</p>
       <div class="hub-owner">ต่อพงศ์ เพียรพัฒน์กุล · รหัสนักศึกษา 664245010</div>
     </div>
   </header>
@@ -105,13 +105,23 @@
   <main class="wrap">
     <ol class="hub-line">
       <li class="stop">
+        <h2 class="stop-title">Transaction, Concurrency และ Recovery</h2>
+        <p class="stop-desc">Lab สัปดาห์ที่ 2 บน MySQL: ทดลอง Dirty Read แต่ละ Isolation Level, Report Fake News แบบ Atomic เมื่อมีคนกดพร้อมกัน 30 คน, Benchmark Autocommit กับ Transaction และจับ Deadlock แล้ว Retry</p>
+        <div class="stop-files">Lab_Week2_Transaction.ipynb</div>
+        <div class="actions">
+          <a class="btn" href="https://colab.research.google.com/github/tpp72/Homework-Hub/blob/main/homework/01_transaction/Lab_Week2_Transaction.ipynb" target="_blank" rel="noopener"><svg><use href="#i-open"/></svg>เปิดใน Colab</a>
+          <a class="btn" href="https://github.com/tpp72/Homework-Hub/tree/main/homework/01_transaction" target="_blank" rel="noopener"><svg><use href="#i-open"/></svg>ดูไฟล์บน GitHub</a>
+        </div>
+      </li>
+
+      <li class="stop">
         <h2 class="stop-title">แนะนำหนังสือและชมรมด้วย Neo4j</h2>
         <p class="stop-desc">เอกสาร PDF งาน Neo4j และ Graph Database: แนะนำหนังสือจากเพื่อนด้วย Traversal 1–2 hop และแนะนำชมรมจาก FRIEND_OF กับ MEMBER_OF</p>
         <div class="stop-files">664245010-Neo4jGraphDB.pdf</div>
         <div class="actions">
-          <a class="btn" href="homework/01_club/664245010-Neo4jGraphDB.pdf" target="_blank" rel="noopener"><svg><use href="#i-open"/></svg>เปิด PDF</a>
-          <a class="btn" href="homework/01_club/664245010-Neo4jGraphDB.pdf" download><svg><use href="#i-download"/></svg>ดาวน์โหลด PDF</a>
-          <a class="btn" href="https://github.com/tpp72/Homework-Hub/tree/main/homework/01_club" target="_blank" rel="noopener"><svg><use href="#i-open"/></svg>ดูไฟล์บน GitHub</a>
+          <a class="btn" href="homework/02_club/664245010-Neo4jGraphDB.pdf" target="_blank" rel="noopener"><svg><use href="#i-open"/></svg>เปิด PDF</a>
+          <a class="btn" href="homework/02_club/664245010-Neo4jGraphDB.pdf" download><svg><use href="#i-download"/></svg>ดาวน์โหลด PDF</a>
+          <a class="btn" href="https://github.com/tpp72/Homework-Hub/tree/main/homework/02_club" target="_blank" rel="noopener"><svg><use href="#i-open"/></svg>ดูไฟล์บน GitHub</a>
         </div>
       </li>
 
@@ -120,8 +130,8 @@
         <p class="stop-desc">สร้างกราฟผู้ใช้ 10 คนกับเหรียญ 8 เหรียญด้วย Python / NetworkX แล้วแนะนำเหรียญด้วยการเดินกราฟ 3 hop และหมวดหมู่สำหรับ Cold Start</p>
         <div class="stop-files">CryptoRecommender_664245010.ipynb</div>
         <div class="actions">
-          <a class="btn" href="https://colab.research.google.com/github/tpp72/Homework-Hub/blob/main/homework/02_graph/CryptoRecommender_664245010.ipynb" target="_blank" rel="noopener"><svg><use href="#i-open"/></svg>เปิดใน Colab</a>
-          <a class="btn" href="https://github.com/tpp72/Homework-Hub/tree/main/homework/02_graph" target="_blank" rel="noopener"><svg><use href="#i-open"/></svg>ดูไฟล์บน GitHub</a>
+          <a class="btn" href="https://colab.research.google.com/github/tpp72/Homework-Hub/blob/main/homework/03_graph/CryptoRecommender_664245010.ipynb" target="_blank" rel="noopener"><svg><use href="#i-open"/></svg>เปิดใน Colab</a>
+          <a class="btn" href="https://github.com/tpp72/Homework-Hub/tree/main/homework/03_graph" target="_blank" rel="noopener"><svg><use href="#i-open"/></svg>ดูไฟล์บน GitHub</a>
         </div>
       </li>
 
@@ -130,8 +140,8 @@
         <p class="stop-desc">ย้ายข้อมูลชุดเดียวกันขึ้น Neo4j Aura เดินกราฟด้วย Cypher สร้าง FRIEND_OF จาก HOLDS และแนะนำเหรียญ 3 แบบ</p>
         <div class="stop-files">CryptoRecommender_664245010_Neo4j.ipynb</div>
         <div class="actions">
-          <a class="btn" href="https://colab.research.google.com/github/tpp72/Homework-Hub/blob/main/homework/03_neo4j/CryptoRecommender_664245010_Neo4j.ipynb" target="_blank" rel="noopener"><svg><use href="#i-open"/></svg>เปิดใน Colab</a>
-          <a class="btn" href="https://github.com/tpp72/Homework-Hub/tree/main/homework/03_neo4j" target="_blank" rel="noopener"><svg><use href="#i-open"/></svg>ดูไฟล์บน GitHub</a>
+          <a class="btn" href="https://colab.research.google.com/github/tpp72/Homework-Hub/blob/main/homework/04_neo4j/CryptoRecommender_664245010_Neo4j.ipynb" target="_blank" rel="noopener"><svg><use href="#i-open"/></svg>เปิดใน Colab</a>
+          <a class="btn" href="https://github.com/tpp72/Homework-Hub/tree/main/homework/04_neo4j" target="_blank" rel="noopener"><svg><use href="#i-open"/></svg>ดูไฟล์บน GitHub</a>
         </div>
       </li>
 

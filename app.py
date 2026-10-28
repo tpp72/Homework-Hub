@@ -24,22 +24,27 @@ REPO_URL = f"https://github.com/{REPO}"
 COLAB_URL = f"https://colab.research.google.com/github/{REPO}/blob/{BRANCH}"
 OWNER_NAME = "ต่อพงศ์ เพียรพัฒน์กุล"
 OWNER_ID = "664245010"
-# Stops 1-3 list the files found in homework/<folder>; the stop without a folder opens this app.
+# Stops 1-4 list the files found in homework/<folder>; the stop without a folder opens this app.
 HUB_STOPS = [
+    {
+        "title": "Transaction, Concurrency และ Recovery",
+        "desc": "Lab สัปดาห์ที่ 2 บน MySQL: ทดลอง Dirty Read แต่ละ Isolation Level, Report Fake News แบบ Atomic เมื่อมีคนกดพร้อมกัน 30 คน, Benchmark Autocommit กับ Transaction และจับ Deadlock แล้ว Retry",
+        "folder": "01_transaction",
+    },
     {
         "title": "แนะนำหนังสือและชมรมด้วย Neo4j",
         "desc": "เอกสาร PDF งาน Neo4j และ Graph Database: แนะนำหนังสือจากเพื่อนด้วย Traversal 1–2 hop และแนะนำชมรมจาก FRIEND_OF กับ MEMBER_OF",
-        "folder": "01_club",
+        "folder": "02_club",
     },
     {
         "title": "Crypto Recommender ด้วย NetworkX",
         "desc": "สร้างกราฟผู้ใช้ 10 คนกับเหรียญ 8 เหรียญด้วย Python / NetworkX แล้วแนะนำเหรียญด้วยการเดินกราฟ 3 hop และหมวดหมู่สำหรับ Cold Start",
-        "folder": "02_graph",
+        "folder": "03_graph",
     },
     {
         "title": "Crypto Recommender ด้วย Neo4j",
         "desc": "ย้ายข้อมูลชุดเดียวกันขึ้น Neo4j Aura เดินกราฟด้วย Cypher สร้าง FRIEND_OF จาก HOLDS และแนะนำเหรียญ 3 แบบ",
-        "folder": "03_neo4j",
+        "folder": "04_neo4j",
     },
     {
         "title": "ระบบแนะนำเหรียญ Crypto",
@@ -895,7 +900,7 @@ def render_hub() -> None:
         </style>
         <div class="hub-band">
           <div class="hub-title">รวมการบ้านและระบบแนะนำ</div>
-          <div class="hub-sub">งานวิชา Graph Database สี่ชิ้นที่ต่อเนื่องกัน เริ่มจาก Cypher พื้นฐาน ไปถึงระบบแนะนำเหรียญที่ต่อกับ Neo4j Aura</div>
+          <div class="hub-sub">งานวิชา Graph Database ห้าชิ้นที่ต่อเนื่องกัน เริ่มจาก Transaction ใน MySQL ผ่าน Cypher พื้นฐาน ไปถึงระบบแนะนำเหรียญที่ต่อกับ Neo4j Aura</div>
           <div class="hub-owner">{OWNER_NAME} · รหัสนักศึกษา {OWNER_ID}</div>
         </div>
         """
